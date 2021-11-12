@@ -1,0 +1,269 @@
+body {
+	background-color: rgb(22, 23, 29);
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	margin: 0;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+	background: rgb(22, 23, 29);
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+html,
+html a {
+	-webkit-font-smoothing: antialiased;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+	-moz-osx-font-smoothing: grayscale;
+	background-color: rgb(39, 40, 48);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: white;
+	line-height: 1px
+}
+
+.firstSection {
+	background-color: rgb(39, 40, 48);
+	height: 500px;
+}
+
+.features {
+	background-color: rgb(22, 23, 29);
+}
+
+p {
+	margin-bottom: 10px;
+	color: #c2c3c5;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+}
+
+.spacer {
+	aspect-ratio: 1450/250;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.layer1 {
+	background-image: url("https://cdn.glitch.com/89252c7f-4dac-4c29-8d26-729518211243%2Fwave-separator.svg?v=1629848197329");
+}
+
+.introduction {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+	margin-top: 100px;
+}
+
+.introductionitem {
+	flex: 0.3;
+	text-align: center;
+}
+
+.guiimage {
+	flex: 0.2;
+	text-align: center;
+}
+
+.gui {
+	transform: scaleX(1) scaleY(1) perspective(500px) rotateY(-10deg) rotateX(8deg) rotateZ(-1deg);
+	-webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+	width: 550px;
+	height: 350px;
+	border-style: solid;
+	border-color: transparent;
+	transition: 0.3s;
+}
+
+.gui:hover {
+	box-shadow: rgb(255, 140, 0, 0.7) 0 0 2px 2px;
+	border-color: rgb(255, 140, 0);
+}
+
+.started {
+	color: white;
+	border-style: solid;
+	border-radius: 10px;
+	border-color: rgb(22, 23, 29);
+	border-width: 2px;
+	background-color: rgb(22, 23, 29);
+	height: 45px;
+	width: auto;
+	font-size: 20px;
+	transition: 0.3s;
+	margin-top: 15px;
+	margin-bottom: 25px;
+	padding: 10px;
+}
+
+.started:hover {
+	background-color: rgb(22, 23, 29);
+	border-color: rgba(255, 140, 0, 0.801);
+}
+
+.navbar {
+	justify-content: center;
+	display: grid;
+	gap: 25px;
+	grid-template-columns: auto auto auto;
+	padding: 10px;
+}
+
+.faqs {
+	display: grid;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.faqItem {
+	text-align: center;
+	border-style: solid;
+	border-color: red;
+	height: 20px;
+}
+
+.btnlogin {
+	border-style: solid;
+	border-width: 2px;
+}
+
+.btnregister {
+	border-style: solid;
+	border-width: 2px;
+}
+
+.item {
+	position: relative;
+	top: 0;
+	transition: 0.3s;
+	display: block;
+	text-align: center;
+	border-style: solid;
+	border-color: rgb(78, 82, 85);
+	border-width: 1px;
+	background-color: rgb(41, 45, 49);
+	width: 300px;
+	height: 200px;
+}
+
+.item:hover {
+	box-shadow: rgb(255, 140, 0, 0.7) 0 0 2px 2px;
+	top: -5px;
+}
+
+.qwe {
+	margin-top: 10px;
+}
+
+.faqs {
+	flex-direction: column;
+}
+
+@media (max-width: 1540px) {
+	.navbar {
+		padding-left: 15px;
+		padding-right: 15px;
+		gap: 10px;
+		justify-content: center;
+	}
+	.introduction {
+		margin-top: 80px;
+	}
+	.introductionitem b {
+		font-size: 25px;
+	}
+	.gui {
+		width: 450px;
+		height: 250px;
+	}
+}
+
+@media (max-width:1280px) {
+	.navbar {
+		padding-left: 15px;
+		padding-right: 15px;
+		grid-template-columns: auto auto;
+		gap: 10px;
+		justify-content: center;
+	}
+	.firstSection {
+		height: 600px;
+	}
+	.introduction {
+		flex-direction: column-reverse;
+		margin-top: 25px;
+	}
+	.guiimage {
+		margin-bottom: 20px;
+	}
+	.gui {
+		width: 350px;
+		height: 250px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.navbar {
+		padding-left: 15px;
+		padding-right: 15px;
+		grid-template-columns: auto auto;
+		gap: 10px;
+		justify-content: center;
+	}
+}
+
+@media (max-width:732px) {
+	 ::-webkit-scrollbar {
+		width: 2px;
+	}
+	.navbar {
+		padding-left: 15px;
+		padding-right: 15px;
+		grid-template-columns: auto;
+		gap: 10px;
+		justify-content: center;
+	}
+	.introduction {
+		flex-direction: column-reverse;
+	}
+	.guiimage {
+		margin-bottom: 20px;
+	}
+	.gui {
+		width: 350px;
+		height: 250px;
+	}
+}
